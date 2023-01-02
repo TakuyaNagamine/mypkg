@@ -20,14 +20,9 @@
   $ros2 run mypkg listener
   ```
 3. `Ctrl + \`で終了
-### launch
-1. ターミナルに以下のコマンドを実行  
-```
-$ros2 launch mypkg talk_listen.launch.py
-```
-2. `Ctrl + \`で終了
-### 実行結果
-- 新たに起動したターミナルに以下のような結果が表示される
+- 実行結果
+
+   新たに起動したターミナルに以下のような結果が表示される
 ```
 [INFO] [1672681160.505342700] [listener]: Listen: 0
 [INFO] [1672681160.981315600] [listener]: Listen: 1
@@ -40,6 +35,34 @@ $ros2 launch mypkg talk_listen.launch.py
 [INFO] [1672681164.481511900] [listener]: Listen: 8
 [INFO] [1672681164.981227600] [listener]: Listen: 9
 [INFO] [1672681165.481212700] [listener]: Listen: 10
+```
+### launch
+1. ターミナルに以下のコマンドを実行  
+```
+$ros2 launch mypkg talk_listen.launch.py
+```
+2. `Ctrl + \`で終了
+- 実行結果
+
+  コマンド実行後,以下のような結果が表示される
+```
+[INFO] [launch]: All log files can be found below /home/takuya/.ros/log/2023-01-03-02-45-03-203706-thinkbook-4639
+[INFO] [launch]: Default logging verbosity is 
+set to INFO
+[INFO] [talker-1]: process started with pid [4641]
+[INFO] [listener-2]: process started with pid 
+[4643]
+[listener-2] [INFO] [1672681504.387617200] [listener]: Listen: 0
+[listener-2] [INFO] [1672681504.862637300] [listener]: Listen: 1
+[listener-2] [INFO] [1672681505.363060000] [listener]: Listen: 2
+[listener-2] [INFO] [1672681505.862764500] [listener]: Listen: 3
+[listener-2] [INFO] [1672681506.362652100] [listener]: Listen: 4
+[listener-2] [INFO] [1672681506.863562400] [listener]: Listen: 5
+[listener-2] [INFO] [1672681507.363023900] [listener]: Listen: 6
+[listener-2] [INFO] [1672681507.862938600] [listener]: Listen: 7
+[listener-2] [INFO] [1672681508.362621500] [listener]: Listen: 8
+[listener-2] [INFO] [1672681508.862397300] [listener]: Listen: 9
+[listener-2] [INFO] [1672681509.362795200] [listener]: Listen: 10
 ```
 ## 動作確認済み環境
 - ROS
