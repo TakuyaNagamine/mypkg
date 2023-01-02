@@ -19,7 +19,14 @@
   ```
   $ros2 run mypkg listener
   ```
-* 実行結果
+3. `Ctrl + \`で終了
+### launch
+1. ターミナルに以下のコマンドを実行  
+```
+$ros2 launch mypkg talk_listen.launch.py
+```
+2. `Ctrl + \`で終了
+### 実行結果
 - 新たに起動したターミナルに以下のような結果が表示される
 ```
 [INFO] [1672681160.505342700] [listener]: Listen: 0
