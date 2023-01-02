@@ -1,5 +1,5 @@
-# mypkg
 ![test](https://github.com/TakuyaNagamine/mypkg/actions/workflows/test.yml/badge.svg)
+# mypkg
 ## 本リポジトリについて
 このリポジトリには千葉工業大学にて開講されている「ロボットシステム学」の講義内で取り扱われているプログラムを含めたリポジトリである
 ## パッケージ内容
