@@ -3,17 +3,21 @@
 # SPDX-License-Identifier: BSD-3-Clause
 import rclpy
 from rclpy.node import Node
-from person_msgs.srv import Query
+from std_msgs.msg import Int16
 
-def cb(request, response):
-    if request.name == "長峰拓也":
-        response.age = 19
-    else:
-        response.age = 255
-    
-    return response
-
+class Talker():          #ヘッダの下にTalkerというクラスを作成
+    def __init__(self):  # オブジェクトを作ると呼ばれる関数
+        self.pub = node.create_publisher(Int16, "countup", 10)
+        self.n = 0
 rclpy.init()
 node = Node("talker")
-srv = node.create_service(Query, "query", cb)
+talker = Talker()
+
+def cb():              #関数内のnやpubをtalkerのものに変更
+    msg = Int16()
+    msg.data = talker.n
+    talker.pub.publish(msg)
+    talker.n += 1
+
+srv = node.create_service(0.5, cb)
 rclpy.spin(node)
