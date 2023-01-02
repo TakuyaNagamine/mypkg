@@ -1,5 +1,5 @@
 # mypkg
-![test](https://github.com/TakuyaNagamine/mypkg/blob/main/.github/workflows/test.yml/badge.svg)
+![test](https://github.com/TakuyaNagamine/mypkg/actions/workflows/test.yml/badge.svg)
 # 動作確認済み環境
 - ROS
   - ROS2 foxy
