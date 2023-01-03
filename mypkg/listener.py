@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 # SPDX-FileCopyrightText: 2022 Takuya Nagamine 　　　　　
 # SPDX-License-Identifier: BSD-3-Clause
 import rclpy
