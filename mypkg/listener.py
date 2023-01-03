@@ -8,8 +8,7 @@ class Listener():
     def __init__(self, node):
         self.pub = node.create_subscription(Int16, "countup", self.cb, 10)
         self.node = node
-        #self.publish()
-        #self.cb()
+
 
     def cb(self, msg):
         self.node.get_logger().info("Listen: %d" % msg.data)
